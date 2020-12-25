@@ -1,0 +1,60 @@
+html,
+body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  background-image: url("https://source.unsplash.com/collection/33385422/christmas-background");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 16px;
+}
+
+/*-- Sign Styles --*/
+.sign {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign__word {
+  font-family: "Vibur", cursive;
+  font-size: 5.6rem;
+  text-align: center;
+  line-height: 1;
+  color: #c6e2ff;
+  -webkit-animation: neon 0.08s ease-in-out infinite alternate;
+          animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+/*-- Animation Keyframes --*/
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(230, 226, 113, 0.5), 0 0 30px rgba(248, 241, 25, 0.5), 0 0 12px rgba(238, 81, 9, 0.52), 0 0 21px rgba(238, 81, 9, 0.92), 0 0 34px rgba(238, 81, 9, 0.78), 0 0 54px rgba(238, 81, 9, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(230, 226, 113, 0.5), 0 0 30px rgba(248, 241, 25, 0.5), 0 0 12px rgba(238, 81, 9, 0.58), 0 0 22px rgba(238, 81, 9, 0.84), 0 0 38px rgba(238, 81, 9, 0.88), 0 0 60px #ee5109;
+  }
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(230, 226, 113, 0.5), 0 0 30px rgba(248, 241, 25, 0.5), 0 0 12px rgba(238, 81, 9, 0.52), 0 0 21px rgba(238, 81, 9, 0.92), 0 0 34px rgba(238, 81, 9, 0.78), 0 0 54px rgba(238, 81, 9, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(230, 226, 113, 0.5), 0 0 30px rgba(248, 241, 25, 0.5), 0 0 12px rgba(238, 81, 9, 0.58), 0 0 22px rgba(238, 81, 9, 0.84), 0 0 38px rgba(238, 81, 9, 0.88), 0 0 60px #ee5109;
+  }
+}
+/*# sourceMappingURL=main.css.map */
