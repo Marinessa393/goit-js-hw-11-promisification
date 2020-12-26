@@ -5,13 +5,12 @@ const users = [
   { name: "Lux", active: false },
 ];
 
-const toggleUserState = (allUsers, userName, callback) => {
+const toggleUserState = (allUsers, userName) => {
   return new Promise((resolve) => {
-    resolve(
-      allUsers.map((user) =>
-        user.name === userName ? { ...user, active: !user.active } : user,
-      ),
+    const updtedUsers = allUsers.map((user) =>
+      user.name === userName ? { ...user, active: !user.active } : user,
     );
+    resolve(updatedUsers);
   });
 };
 
